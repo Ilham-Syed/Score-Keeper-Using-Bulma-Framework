@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TT score Keeper</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="column">
+      <div class="column is-half is-offset-one-quarter">
+        <div class="card">
+          <div class="card-image">
+                  <figure class="image is-3by2">
+                    <img src="https://images.unsplash.com/photo-1576617497557-22895ee5930b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Placeholder image">
+                  </figure>
+                </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Table Tennis Game</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <h1>
+                <span id="p1score">0</span> to <span id="p2score">0</span>
+              </h1>
+            </div>
+            <label for="dropdown" class="is-size-5 mt-2">Select No of Rounds</label>
+            <div id="dropdown" class="select is-rounded">
+              <select name="" id="playerNos">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+
+          <footer class="card-footer">
+            <div class="buttons mt-1 ml-1">
+              <button
+                id="p1"
+                class="button is-primary card-footer-item is-medium"
+              >
+                +1 Player One
+              </button>
+              <button
+                id="p2"
+                class="button is-primary card-footer-item is-medium"
+              >
+                +1 Player Two
+              </button>
+              <button
+                id="resetButton"
+                class="button is-danger card-footer-item is-medium"
+              >
+                Reset
+              </button>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons"></div>
+
+    <script src="app1.js"></script>
+  </body>
+</html>
